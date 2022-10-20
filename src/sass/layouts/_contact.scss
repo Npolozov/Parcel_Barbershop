@@ -58,27 +58,27 @@ section.contact {
         font-family: 'Raleway';
       font-style: normal;
       display: inline-block;
+      text-decoration: none;
       font-weight: 700;
       font-size: 28px;
       line-height: 1.2;
       letter-spacing: 0.05em;
-      color: var(--orange-color);
+      color: white;
       margin-bottom: 20px;
       transition: var(--animation);
-      
       &:hover {
-        color: white;
-      }
-      &:hover .header_logo--span {
         color: var(--orange-color);
       }
+      &:hover .contact_logo--span {
+        color: white;
+      }
       }
       
       
       
-      .cobtact_logo--span  {
+      .contact_logo--span  {
         transition: var(--animation);
-        color: white;
+        color: var(--orange-color);
       }
       
       .soc-list {
@@ -103,7 +103,7 @@ section.contact {
         color: var(--white-color);
         border-radius: 50%;
         transition: background-color var(--animation),
-          border-radius 250ms var(--animation);
+          border-radius  var(--animation);
       
         &:hover,
         &:focus {
@@ -115,10 +115,10 @@ section.contact {
       .footer-social-logo {
         fill: currentColor;
       
-        // @include desktop {
-        //   width: 34px;
-        //   height: 34px;
-        // }
+        @media screen and (min-width: 1200px) {
+          width: 34px;
+          height: 34px;
+        }
       }
       
       .header_logo.footer {
@@ -134,10 +134,10 @@ section.contact {
         line-height: 1.7;
         color: var(--white-color);
         transition: color var(--animation);
-      
-        // @include desktop {
-        //   font-size: 18px;
-        // }
+
+        @media screen and (min-width: 1200px) {
+          font-size: 22px;
+        }
       
         &:hover,
         &:focus {

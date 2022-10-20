@@ -1,4 +1,4 @@
-section.form {
+.footer_form {
     background-color: #191C26;
 
     padding-bottom: 50px;
@@ -20,16 +20,26 @@ section.form {
       }
     }
   
+    & .conteiner {
+      display: flex;
+    }
     
 }
 
-section .conteiner {
-  display: flex;
-}
 
 .form{
     display: flex;
     flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 80px 0 80px;
+    }
+  
+    @media screen and (min-width: 1200px)  {
+      width: 500px;
+      padding: 0;
+    }
 }
 
 .input {
@@ -102,6 +112,7 @@ color: var(--rgb-text);
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    transition: var(--animation);
 }
 
 

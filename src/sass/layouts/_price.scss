@@ -62,38 +62,38 @@ section.price {
 }
 
 .conteiner-price {
-    padding: 30px;
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  padding: 30px;
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        background:none;
-      }
+  @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      background:none;
+    }
 }
 
 .conteiner-price-list-one {
-    @media screen and (min-width: 1200px) {
-        padding: 30px 40px;
-    width: 585px;
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-    }
-    
+  @media screen and (min-width: 1200px) {
+      padding: 30px 40px;
+  width: 585px;
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  
 }
 
 .conteiner-price-list-two {
-    @media screen and (min-width: 1200px) {
-        padding: 30px 40px;
-    flex-grow: 1;
-    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
-    }
+  @media screen and (min-width: 1200px) {
+      padding: 30px 40px;
+  flex-grow: 1;
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 
 .item-prise-one,
 .item-prise-two{
-    font-weight: 400;
+  font-weight: 400;
 font-size: 14px;
 line-height: 2.14;
 letter-spacing: 0.02em;
@@ -102,31 +102,31 @@ display: flex;
 align-items: baseline;
 justify-content: space-between;
 @media screen and (min-width: 1200px) {
-    font-size: 18px;
-  }
+  font-size: 18px;
+}
 }
 
 .item-prise-one:last-child{
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 20px;
-  }
- 
+@media screen and (max-width: 1199px) {
+  margin-bottom: 20px;
+}
+
 }
 
 
 .item-prise-one:not(:last-child),
 .item-prise-two:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .price-text-paragraf {
-    order: -1;
+  order: -1;
 }
 
 .item-prise-one::before,
 .item-prise-two::before  {
-    content: '';
-    flex-grow: 1;
-    height: 1px;
-    background-color: rgba(157, 164, 189, 0.12);
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
 }
