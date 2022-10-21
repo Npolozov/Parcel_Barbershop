@@ -19,11 +19,16 @@
   }
 
   &.school {
-    color: var( --bottom-text-color);
+    color: var(--bottom-text-color);
+  }
+
+  &.gallery {
+    color: var(--grey-color);
+    margin-bottom: 44px;
   }
 
   &::before {
-    content: "";
+    content: '';
     width: 60px;
     height: 1px;
     background-color: currentColor;

@@ -1,17 +1,22 @@
-(() => {
-  const menuBtnRef = document.querySelectorAll("[data-menu-button]");
-  const mainButtonRef = menuBtnRef[0];
-  const mobileMenuRef = document.querySelector("[data-menu]");
+const burgerActive = document.querySelector('.header_burger');
+const burgerMenu = document.querySelector('.backdrop');
+const lockBody = document.querySelector('body');
 
-  menuBtnRef.forEach((el) =>
-    el.addEventListener("click", () => {
-      const expanded =
-        mainButtonRef.getAttribute("aria-expanded") === "true" || false;
+const linkClickRef = document.querySelectorAll('.mobal_link');
+console.log(linkClickRef);
 
-      mainButtonRef.classList.toggle("is-open");
-      mainButtonRef.setAttribute("aria-expanded", !expanded);
+burgerActive.addEventListener('click', e => {
+  burgerActive.classList.toggle('active');
+  burgerMenu.classList.toggle('is-open');
+  lockBody.classList.toggle('lock');
+});
 
-      mobileMenuRef.classList.toggle("is-open");
-    })
-  );
-})();
+linkClickRef.forEach(item => {
+  item.addEventListener('click', linkClickClose);
+});
+
+function linkClickClose(event) {
+  burgerActive.classList.remove('active');
+  burgerMenu.classList.remove('is-open');
+  lockBody.classList.remove('lock');
+}
