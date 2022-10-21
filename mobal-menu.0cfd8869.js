@@ -1,2 +1,0 @@
-("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("lTs1n",(function(e,t){var n,i,o;n=document.querySelectorAll("[data-menu-button]"),i=n[0],o=document.querySelector("[data-menu]"),n.forEach((function(e){return e.addEventListener("click",(function(){var e="true"===i.getAttribute("aria-expanded")||!1;i.classList.toggle("is-open"),i.setAttribute("aria-expanded",!e),o.classList.toggle("is-open")}))}))}));
-//# sourceMappingURL=mobal-menu.0cfd8869.js.map
