@@ -27,7 +27,7 @@ section.price {
         rgba(25, 28, 38, 0.768)
       ),
       url(../images/price/imgprice-tab.jpg);
-      height: 760px;
+    height: 760px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -47,7 +47,7 @@ section.price {
       ),
       url(../images/price/imgprice-comp.jpg);
 
-      height: 600px;
+    height: 600px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -63,56 +63,52 @@ section.price {
 
 .conteiner-price {
   padding: 30px;
-  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 
   @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: center;
-      padding: 0;
-      background:none;
-    }
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background: none;
+  }
 }
 
 .conteiner-price-list-one {
   @media screen and (min-width: 1200px) {
-      padding: 30px 40px;
-  width: 585px;
-  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    padding: 30px 40px;
+    width: 585px;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
-  
 }
 
 .conteiner-price-list-two {
   @media screen and (min-width: 1200px) {
-      padding: 30px 40px;
-  flex-grow: 1;
-  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    padding: 30px 40px;
+    flex-grow: 1;
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
 
-
 .item-prise-one,
-.item-prise-two{
+.item-prise-two {
   font-weight: 400;
-font-size: 14px;
-line-height: 2.14;
-letter-spacing: 0.02em;
-color: #9DA4BD;
-display: flex;
-align-items: baseline;
-justify-content: space-between;
-@media screen and (min-width: 1200px) {
-  font-size: 18px;
-}
-}
-
-.item-prise-one:last-child{
-@media screen and (max-width: 1199px) {
-  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
 
+.item-prise-one:last-child {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
 }
-
 
 .item-prise-one:not(:last-child),
 .item-prise-two:not(:last-child) {
@@ -124,7 +120,7 @@ justify-content: space-between;
 }
 
 .item-prise-one::before,
-.item-prise-two::before  {
+.item-prise-two::before {
   content: '';
   flex-grow: 1;
   height: 1px;

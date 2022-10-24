@@ -27,6 +27,10 @@
     margin-bottom: 44px;
   }
 
+  &.masters {
+    color: var(--bottom-text-color);
+  }
+
   &::before {
     content: '';
     width: 60px;

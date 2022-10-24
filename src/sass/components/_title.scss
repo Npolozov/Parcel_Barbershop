@@ -1,5 +1,5 @@
 .title {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 48px;
   line-height: 1.16;
   letter-spacing: 0.05em;
@@ -11,7 +11,7 @@
     line-height: 1.18;
     letter-spacing: 0.05em;
   }
-// -------------------------About------------------------
+  // -------------------------About------------------------
   &.about {
     width: 330px;
     font-size: 28px;
@@ -23,7 +23,7 @@
       width: 483px;
     }
   }
-// -------------------------Price------------------------
+  // -------------------------Price------------------------
   &.price {
     font-size: 28px;
     margin-bottom: 44px;
@@ -32,7 +32,7 @@
       font-size: 42px;
     }
   }
-// -------------------------School------------------------
+  // -------------------------School------------------------
   &.school {
     font-size: 36px;
     color: var(--black-color);
@@ -41,12 +41,17 @@
     @media screen and (min-width: 768px) {
       font-size: 42px;
     }
+  }
+  // --------------------------form-----------------------
+  &.form {
+    margin-bottom: 44px;
+    text-align: center;
+    font-size: 36px;
+  }
 
-}
-// --------------------------form-----------------------
-&.form {
-  margin-bottom: 44px;
-  text-align: center;
-  font-size: 36px;
-}
+  &.masters {
+    font-size: 36px;
+    margin-bottom: 44px;
+    color: var(--black-color);
+  }
 }

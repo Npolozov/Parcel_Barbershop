@@ -103,4 +103,10 @@
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--orange-color);
+  }
 }
