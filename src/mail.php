@@ -7,23 +7,36 @@ require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/SMTP.php';
 
 
+$title = "Заказ";
 
 $admin_email = array();
 foreach ( $_POST["admin_email"] as $key => $value ) {
 	array_push($admin_email, $value);
 }
 
+$c = true;
+// Формирование самого письма
+$title = "Заголовок письма";
+foreach ( $_POST as $key => $value ) {
+  if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+    $body .= "
+    " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
+      <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
+      <td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
+    </tr>
+    ";
+  }
+}
+
+$body = "<table style='width: 100%;'>$body</table>";
+
 $mail = new PHPMailer(true);
-$mail->IsHTML(true);
+$mail->CharSet = 'UTF-8';
+$mail->isSMTP();
 
 
 
-$name = $_POST['name'];
-$phone = $_POST['tel'];
-$email = $_POST['email'];
-$message = $_POST['message'];
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'ssl://smtp.gmail.com';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'npolozov0@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
@@ -38,16 +51,12 @@ foreach ( $admin_email as $key => $value ) {
 	$mail->addAddress($value);
 }
 
-
-$mail->Subject = 'Заявка';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
-$mail->AltBody = '';
+$mail->IsHTML(true);
+// $mail->Subject = 'Заявка';
+// $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email. '<br>Сообщение этого пользователя: ' .$message;
+// $mail->AltBody = '';
+$mail->Subject = $title;
+$mail->Body = $body;
 $mail->send();
 
-
-if ($mailer->send($message)) {
-    echo 'Mail sent successfully.';
-} else {
-    echo 'I am sure, your configuration are not correct. :(';
-}
 ?>
