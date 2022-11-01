@@ -18,6 +18,19 @@
 .about_item--photo:not(:last-child) {
   margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
     margin-right: 30px;
   }
+}
+
+.about_item--photo {
+  overflow: hidden;
+
+  &:hover .img_scale {
+    transform: scale(1.15);
+  }
+}
+
+.img_scale {
+  transition: transform var(--slow-animation);
 }
