@@ -1,0 +1,50 @@
+.input_modal {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: rgba(157, 164, 189, 0.4);
+  outline: none;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--orange-color);
+  }
+
+  &::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+  }
+}
+
+.modal-close {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-bottom: 10px;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--orange-color);
+  }
+}
+
+.textarea_modal {
+  outline: none;
+  resize: none;
+  height: 100px;
+  transition: border-color var(--animation);
+  margin-top: 20px;
+}

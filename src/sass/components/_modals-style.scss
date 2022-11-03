@@ -25,11 +25,13 @@
 
 .modal__container {
   position: relative;
-  width: 1000px;
+  width: 500px;
+  padding: 20px 10px;
+  border: 1px solid black;
   margin: 50px auto;
   display: none;
   vertical-align: middle;
-  background-color: #fff;
+  background-color: white;
   border-radius: 20px;
   cursor: default;
   text-align: left;
