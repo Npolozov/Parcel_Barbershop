@@ -1,5 +1,6 @@
 .input_modal {
   width: 100%;
+  color: currentColor;
   margin-bottom: 20px;
   padding: 5px 10px;
   background-color: transparent;
@@ -26,7 +27,7 @@
 .modal-close {
   width: 20px;
   height: 20px;
-  border-radius: 10px;
+  border: none;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -37,7 +38,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--orange-color);
+    color: var(--orange-color);
   }
 }
 
@@ -47,4 +48,23 @@
   height: 100px;
   transition: border-color var(--animation);
   margin-top: 20px;
+}
+
+.title_modal {
+  color: black;
+  font-family: 'Raleway';
+  font-size: 20px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.radio_container {
+  display: flex;
+  align-items: center;
+}
+
+.radio {
+  margin-left: 10px;
 }

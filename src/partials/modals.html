@@ -1,8 +1,9 @@
 <div class="modal">
   <div class="modal__container" data-target="first">
-    <button class="modal-close">X</button>
+    <button class="modal-close">x</button>
     <div class="modal-content">
       <form action="" autocomplete="off">
+        <h2 class="title_modal">Онлайн-запись</h2>
         <div class="input_container">
           <input class="input_modal" type="text" placeholder="name" />
         </div>
@@ -14,17 +15,24 @@
         </div>
         <div class="radio_container">
           <label>
-            <input type="radio" name="color" value="red" checked />
-            Red
+            <input
+              class="radio"
+              type="radio"
+              name="color"
+              value="black"
+              checked
+            />
+            black
           </label>
           <label>
-            <input type="radio" name="color" value="white" />
-            White
+            <input class="radio" type="radio" name="color" value="yellow" />
+            yellow
           </label>
           <label>
-            <input type="radio" name="color" value="green" />
-            Green
+            <input class="radio" type="radio" name="color" value="green" />
+            green
           </label>
+          <button class="radio_btn" type="submit">change</button>
         </div>
         <div class="input_container">
           <textarea
@@ -34,6 +42,7 @@
             placeholder="Type your message here..."
           ></textarea>
         </div>
+        <button class="btn modal_btn" type="submit">отправить</button>
       </form>
     </div>
   </div>
