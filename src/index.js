@@ -1,4 +1,4 @@
-import('./js/form');
+
 import('./js/mobal-menu');
 import('./js/simpleLightbox');
 import('./js/modals');
