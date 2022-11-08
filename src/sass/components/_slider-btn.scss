@@ -1,0 +1,8 @@
+.slider_btn_conteiner {
+  display: none;
+  @include desktop {
+    display: block;
+    position: absolute;
+    left: 1050px;
+  }
+}
