@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("7tzR7",(function(e,o){const n=document.querySelector(".hero-content"),l=document.querySelector(".slider_btn_next");console.log(n),console.log(l),l.addEventListener("click",(e=>{console.log(l),n.classList.add(".slider_two")}))}));
+//# sourceMappingURL=slider.0e9f63fb.js.map

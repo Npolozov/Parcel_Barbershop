@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("8Veln",(function(e,o){var n=document.querySelector(".hero-content"),l=document.querySelector(".slider_btn_next");console.log(n),console.log(l),l.addEventListener("click",(function(e){console.log(l),n.classList.add(".slider_two")}))}));
+//# sourceMappingURL=slider.92bb83ff.js.map
