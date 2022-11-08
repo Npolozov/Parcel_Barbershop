@@ -6,15 +6,15 @@ button.addEventListener('click', function (e) {
   for (let radio of radios) {
     if (radio.checked) {
       console.log(radio.value);
-      if (radio.value === 'yellow') {
-        document.querySelector('body').classList.add('yellow');
-        document.querySelector('body').classList.remove('green');
-      } else if (radio.value === 'green') {
-        document.querySelector('body').classList.remove('yellow');
-        document.querySelector('body').classList.add('green');
+      if (radio.value === 'aqua') {
+        document.querySelector('body').classList.add('aqua');
+        document.querySelector('body').classList.remove('blue');
+      } else if (radio.value === 'blue') {
+        document.querySelector('body').classList.remove('aqua');
+        document.querySelector('body').classList.add('blue');
       } else {
-        document.querySelector('body').classList.remove('green');
-        document.querySelector('body').classList.remove('yellow');
+        document.querySelector('body').classList.remove('aqua');
+        document.querySelector('body').classList.remove('blue');
       }
     }
   }
