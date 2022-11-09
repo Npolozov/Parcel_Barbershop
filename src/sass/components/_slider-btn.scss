@@ -6,3 +6,15 @@
     left: 1050px;
   }
 }
+
+.slider_btn_next,
+.slider_btn_prev {
+  border-radius: 10px;
+  height: 1px;
+  width: 50px;
+  transition: var(--animation);
+
+  &:hover {
+    background-color: orangered;
+  }
+}
