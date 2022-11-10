@@ -1,5 +1,5 @@
-<div class="modal">
-  <div class="modal__container" data-target="first">
+<div class="modal is-hidden">
+  <div class="modal__container" data-target="form-popup">
     <div class="modal-content">
       <form action="" autocomplete="off">
         <h2 class="title_modal">Онлайн-запись</h2>
@@ -45,7 +45,29 @@
       </form>
     </div>
   </div>
-  <!-- <div class="modal__container" data-target="second">
-    <button class="modal-close">Закрыть</button>
-  </div> -->
+  <div class="modal__container" data-target="me-popup">
+    <div class="modal-content">
+      <form action="" autocomplete="off">
+        <h2 class="title_modal">Онлайн-запись</h2>
+        <div class="input_container">
+          <input class="input_modal" type="text" placeholder="name" />
+        </div>
+        <div class="input_container">
+          <input class="input_modal" type="email" placeholder="mail" />
+        </div>
+        <div class="input_container">
+          <input class="input_modal" type="number" placeholder="" />
+        </div>
+        <div class="input_container">
+          <textarea
+            class="input_modal textarea_modal"
+            name="feedback"
+            rows="5"
+            placeholder="Type your message here..."
+          ></textarea>
+        </div>
+        <button class="btn modal_btn" type="submit">отправить</button>
+      </form>
+    </div>
+  </div>
 </div>
