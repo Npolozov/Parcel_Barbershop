@@ -20,11 +20,13 @@ btnNext.addEventListener('click', () => {
 });
 
 btnPrev.addEventListener('click', () => {
-  if (index === 0) {
-    return;
+  localStorage.setItem('slider', index);
+  if (index <= 0) {
+    index = 3;
   }
   index -= 1;
   hero.className = classNames[index];
+  localStorage.setItem('slider', index);
 });
 
 function localSlider() {
