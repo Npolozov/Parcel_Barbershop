@@ -15,8 +15,8 @@ btnNext.addEventListener('click', () => {
   index++;
   if (index === classNames.length) index = 0;
   console.log(index);
-  localStorage.setItem('slider', index);
   hero.className = classNames[index];
+  localStorage.setItem('slider', index);
 });
 
 btnPrev.addEventListener('click', () => {
@@ -33,6 +33,7 @@ function localSlider() {
   const saveSlider = localStorage.getItem('slider');
   console.log('slider :>> ', saveSlider);
   if (saveSlider) {
+    index = saveSlider;
     hero.className = classNames[saveSlider];
   }
 }
