@@ -22,7 +22,8 @@ btnNext.addEventListener('click', () => {
 btnPrev.addEventListener('click', () => {
   localStorage.setItem('slider', index);
   if (index <= 0) {
-    index = 3;
+    let lastElem = classNames.length;
+    index = lastElem;
   }
   index -= 1;
   hero.className = classNames[index];
