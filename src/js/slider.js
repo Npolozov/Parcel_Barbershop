@@ -7,6 +7,8 @@ const classNames = [
   'hero-content slider_two',
   'hero-content slider_three',
 ];
+
+console.log(classNames.length);
 let index = 0;
 
 localSlider();
