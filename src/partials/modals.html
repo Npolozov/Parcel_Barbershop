@@ -4,13 +4,29 @@
       <form action="" autocomplete="off">
         <h2 class="title_modal">Онлайн-запись</h2>
         <div class="input_container">
-          <input class="input_modal" type="text" placeholder="name" />
+          <label for="" class="label">Имя</label>
+          <input class="input_modal" type="text" />
+          <span class="alert alert--warning"
+            >Имя должно состоять минимум из 3 символов</span
+          >
+          <span class="material-symbols-outlined input_icon"> person </span>
         </div>
         <div class="input_container">
-          <input class="input_modal" type="email" placeholder="mail" />
+          <label for="" class="label">Почта</label>
+          <input class="input_modal" type="email" />
+          <span class="alert alert--warning">
+            Введите почту в формате example@mail.com</span
+          >
+
+          <span class="material-symbols-outlined input_icon"> mail </span>
         </div>
         <div class="input_container">
-          <input class="input_modal" type="number" placeholder="" />
+          <label for="" class="label">Телефон</label>
+          <input class="input_modal" type="number" />
+          <span class="alert alert--warning"
+            >Введите номер телефона в формате +38 099 123 45 67</span
+          >
+          <span class="material-symbols-outlined input_icon"> call </span>
         </div>
         <div class="radio_container">
           <label>
@@ -54,9 +70,6 @@
         </div>
         <div class="input_container">
           <input class="input_modal" type="email" placeholder="mail" />
-        </div>
-        <div class="input_container">
-          <input class="input_modal" type="number" placeholder="" />
         </div>
         <div class="input_container">
           <textarea
