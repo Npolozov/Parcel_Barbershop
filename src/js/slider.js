@@ -17,12 +17,13 @@ btnNext.addEventListener('click', () => {
   index++;
   if (index === classNames.length) index = 0;
   console.log(index);
+
   hero.className = classNames[index];
+  console.log(hero.className);
   localStorage.setItem('slider', index);
 });
 
 btnPrev.addEventListener('click', () => {
-  localStorage.setItem('slider', index);
   if (index <= 0) {
     let lastElem = classNames.length;
     index = lastElem;
