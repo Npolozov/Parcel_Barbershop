@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequired7c6.register("dpZmf",(function(o,l){const e=document.querySelector(".scroll-to-top");console.log(e),window.onscroll=()=>{window.scrollY>400?e.classList.remove("scroll-hide"):window.scrollY<400&&e.classList.add("scroll-hide"),e.onclick=()=>{window.scrollTo(0,0)}}}));
+//# sourceMappingURL=scroll-to-top.01b2c224.js.map
