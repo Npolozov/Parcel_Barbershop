@@ -1,19 +1,20 @@
 .gallery_list {
   @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
-.gallery_item {
-  @include tablet {
-    flex-basis: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
+    row-gap: 20px;
+    column-gap: 20px;
   }
+
   @include desktop {
-    flex-basis: calc((100% - 8 * 15px) / 4);
-    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    row-gap: 20px;
+    column-gap: 20px;
   }
 }
 
