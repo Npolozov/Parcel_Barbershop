@@ -1,13 +1,3 @@
-var Inputmask = require('inputmask');
-
-//es6
-import Inputmask from 'inputmask';
-
-let inputs = document.querySelector('input[type="number"]');
-console.log(inputs);
-let im = new Inputmask('+7 (999) 999-99-99');
-im.mask(inputs);
-
 const refs = {
   openModalBtn: document.querySelectorAll('.btn'),
   modal: document.querySelector('.modal'),
