@@ -10,7 +10,6 @@ refs.modal.addEventListener('click', onBackdropClick);
 refs.openModalBtn.forEach(el => {
   el.addEventListener('click', e => {
     let path = e.currentTarget.getAttribute('data-path');
-    console.log(path);
 
     refs.modals.forEach(el => {
       el.classList.remove('modal--visible');
